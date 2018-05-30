@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz zgłoszeniowy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+  
+<!-- Nagłówek -->
+  <div class="logo">
+  <img src="http://wk.diecezja.opole.pl/images/warsztaty/warsztat-ikona.png" alt="Logo"></div>
+  <div class="naglowek"><h1>Formularz zgłoszeniowy</h1></div>
+   
+   
+<!-- Formularz w tabeli-->   
+<form action="https://formspree.io/juniormax@onet.eu" method="POST">
+<table>
+    <tr>
+        <td>Imię:</td>
+        <td><input type="text" class="input-text" id="imie"></td>
+    </tr>
+    <tr>
+        <td>Nazwisko:</td>
+        <td><input type="text" class="input-text" id="nazwisko"></td>
+    </tr>
+    <tr>
+        <td>E-mail:</td>
+        <td><input type="email" class="input-text" id="email"></td>
+    </tr>
+    <tr>
+        <td>Numer telefonu:</td>
+        <td><input type="text" class="input-text" id="telefon"></td>
+    </tr>
+    <tr>
+        <td>Miasto:</td>
+        <td>
+            <select name="miasto" id="miasto">
+                <option id="krakow" value="krakow">Kraków</option>
+                <option id="warszawa" value="warszawa">Warszawa</option>
+                <option id="gdansk" value="gdansk">Gdańsk</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Płeć:</td>
+        <td>
+        <input type="radio" id="kobieta" name="gender">Kobieta
+        <input type="radio" id="mezczyzna" name="gender">Mężczyzna</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</td>
+    </tr>
+    <tr>
+        <td>Wiadomość:</td>
+        <td><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" id="button" class="button" value="Wyślij"></td>
+    </tr>
+</table>
+</form>            
+</body>
+</html>

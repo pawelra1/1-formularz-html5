@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+img {
+    width: 10%;
+    height: 10%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.logo {
+    background-color: darkorange;
+    text-align: center;
+}
+
+.naglowek {
+    background-color: darkorange;
+    text-align: center;
+    color: white; 
+}
+
+.input-text {
+    width: 350px;
+}
+
+table { 
+    width: 500px; margin: 15px auto; text-align: left; 
+}
+
+td {
+    padding-bottom: 10px;
+}
+
+.button {
+    background: darkorange; 
+    color: white;
+    border: 0; 
+    font-size: 20px;
+    width: 150px; 
+    text-align: center;
+}
