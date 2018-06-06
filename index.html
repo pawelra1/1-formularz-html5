@@ -1,67 +1,53 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz zgłoszeniowy</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
 <body>
-  
-<!-- Nagłówek -->
-  <div class="logo">
-  <img src="http://wk.diecezja.opole.pl/images/warsztaty/warsztat-ikona.png" alt="Logo"></div>
-  <div class="naglowek"><h1>Formularz zgłoszeniowy</h1></div>
-   
-   
-<!-- Formularz w tabeli-->   
-<form action="https://formspree.io/juniormax@onet.eu" method="POST">
-<table>
-    <tr>
-        <td>Imię:</td>
-        <td><input type="text" class="input-text" id="imie" name="imie"></td>
-    </tr>
-    <tr>
-        <td>Nazwisko:</td>
-        <td><input type="text" class="input-text" id="nazwisko" name="nazwisko"></td>
-    </tr>
-    <tr>
-        <td>E-mail:</td>
-        <td><input type="email" class="input-text" id="email" name="email"></td>
-    </tr>
-    <tr>
-        <td>Numer telefonu:</td>
-        <td><input type="text" class="input-text" id="telefon" name="telefon"></td>
-    </tr>
-    <tr>
-        <td>Miasto:</td>
-        <td>
-            <select name="miasto" id="miasto">
+
+    <!-- Nagłówek -->
+    <div class="logo">
+        <img src="http://wk.diecezja.opole.pl/images/warsztaty/warsztat-ikona.png" alt="Logo"></div>
+    <div class="naglowek">
+        <h1>Formularz zgłoszeniowy</h1>
+    </div>
+    
+
+
+    <!-- Formularz -->
+
+    <form action="https://formspree.io/juniormax@onet.eu" method="POST">
+            <p>Imię:<br><input type="text" class="input-text" id="imie"  name="imie"></p>
+
+            <p>Nazwisko:<br><input type="text" class="input-text" id="nazwisko" name="nazwisko"></p>
+
+            <p>E-mail:<br><input type="email" class="input-text" id="email" name="email"></p>
+
+            <p>Numer telefonu:<br><input type="text" class="input-text" id="telefon" name="telefon"></p>
+
+            <p>Miasto: <select name="miasto" id="miasto">
                 <option id="krakow" value="krakow">Kraków</option>
                 <option id="warszawa" value="warszawa">Warszawa</option>
                 <option id="gdansk" value="gdansk">Gdańsk</option>
-            </select>
-        </td>
-    </tr>
-    <tr>
-        <td>Płeć:</td>
-        <td>
-        <input type="radio" id="kobieta" value="kobieta" name="gender">Kobieta
-        <input type="radio" id="mezczyzna" value="mezczyzna" name="gender">Mężczyzna</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</td>
-    </tr>
-    <tr>
-        <td>Wiadomość:</td>
-        <td><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="submit" id="button" class="button" value="Wyślij"></td>
-    </tr>
-</table>
-</form>            
+            </select></p>
+
+            <p>Płeć: <input type="radio" name="gender" id="kobieta" value="kobieta"><label for="kobieta">Kobieta</label>
+
+                <input type="radio" name="gender" id="mezczyzna" value="mezczyzna"><label for="mezczyzna">Mężczyzna</label>
+            </p>
+
+
+            <p><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</p>
+
+            <p>Wiadomość: <br><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></p>
+
+            <p><input type="submit" id="button" class="button" value="Wyślij"></p>
+    </form>
 </body>
+
 </html>

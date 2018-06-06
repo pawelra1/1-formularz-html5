@@ -1,12 +1,13 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 p {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
+    text-align: center;
 }
 
 h1 {
@@ -33,16 +34,9 @@ img {
     color: white; 
 }
 
+
 .input-text {
     width: 350px;
-}
-
-table { 
-    width: 500px; margin: 15px auto; text-align: left; 
-}
-
-td {
-    padding-bottom: 10px;
 }
 
 .button {
