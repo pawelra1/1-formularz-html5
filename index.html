@@ -16,37 +16,34 @@
     <div class="naglowek">
         <h1>Formularz zgłoszeniowy</h1>
     </div>
-    
+
 
 
     <!-- Formularz -->
 
     <form action="https://formspree.io/juniormax@onet.eu" method="POST">
-            <p>Imię:<br><input type="text" class="input-text" id="imie"  name="imie"></p>
+        <br><label class="label">Imię:<br><input type="text" class="input-text" id="imie" name="imie"></label><br>
 
-            <p>Nazwisko:<br><input type="text" class="input-text" id="nazwisko" name="nazwisko"></p>
+        <label>Nazwisko:<br><input type="text" class="input-text" id="nazwisko" name="nazwisko"></label><br>
 
-            <p>E-mail:<br><input type="email" class="input-text" id="email" name="email"></p>
+        <label>E-mail:<br><input type="email" class="input-text" id="email" name="email"></label><br>
 
-            <p>Numer telefonu:<br><input type="text" class="input-text" id="telefon" name="telefon"></p>
+        <label>Numer telefonu:<br><input type="text" class="input-text" id="telefon" name="telefon"></label><br><br>
 
-            <p>Miasto: <select name="miasto" id="miasto">
+        <label>Miasto: <select name="miasto" id="miasto">
                 <option id="krakow" value="krakow">Kraków</option>
                 <option id="warszawa" value="warszawa">Warszawa</option>
                 <option id="gdansk" value="gdansk">Gdańsk</option>
-            </select></p>
+            </select></label><br><br>
 
-            <p>Płeć: <input type="radio" name="gender" id="kobieta" value="kobieta"><label for="kobieta">Kobieta</label>
+        <span>Płeć: </span><input type="radio" name="gender" id="kobieta" value="kobieta"><label for="kobieta">Kobieta</label>
+        <input type="radio" name="gender" id="mezczyzna" value="mezczyzna"><label for="mezczyzna">Mężczyzna</label><br><br>
 
-                <input type="radio" name="gender" id="mezczyzna" value="mezczyzna"><label for="mezczyzna">Mężczyzna</label>
-            </p>
+        <label><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</label><br><br>
 
+        <label>Wiadomość: <br><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></label><br><br>
 
-            <p><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</p>
-
-            <p>Wiadomość: <br><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></p>
-
-            <p><input type="submit" id="button" class="button" value="Wyślij"></p>
+        <input type="submit" id="button" class="button" value="Wyślij">
     </form>
 </body>
 
